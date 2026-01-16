@@ -76,7 +76,7 @@ const Hero = ({ currentLanguage }) => {
                         <p className="hero-bio">{t.bio}</p>
                     </div>
                     <div className="hero-actions">
-                        <a href="../assets/Hero-section/CV%20El%20Haroria%20Abdel%20V2.pdf" download className="btn-primary">
+                        <a href="../../public/Hero-section/CV%20El%20Haroria%20Abdel%20V2.pdf" download className="btn-primary">
                             <Download size={18} />
                             {t.cta_primary}
                         </a>
@@ -95,7 +95,7 @@ const Hero = ({ currentLanguage }) => {
                 <div className="hero-visuals">
                     <div className="profile-box">
                         <div className="profile-placeholder">
-                            <img className="profile-image" src="/src/assets/Hero-section/photo.png" alt="Abdel El Haroria" />
+                            <img className="profile-image" src="/Hero-section/photo.png" alt="Abdel El Haroria" />
                         </div>
                     </div>
                     <div className="contact-card">
