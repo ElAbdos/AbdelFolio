@@ -35,29 +35,25 @@ export const translations = {
 
         skills: {
             tag: 'Compétences',
-            title: 'Mon expertise',
-            subtitle: 'Une approche pluridisciplinaire de l\'informatique.',
-            tools: 'Outils maîtrisés',
+            title: 'Mon Expertise',
+            subtitle: 'Une vision 360° du développement : du code au déploiement.',
+            tools: 'Outils',
             categories: {
-                dev: {
-                    title: 'Développement',
-                    description: 'Conception et développement d\'applications web et mobiles robustes, évolutives et centrées sur l\'expérience utilisateur.'
+                frontend: {
+                    title: 'Frontend & Mobile',
+                    description: 'Création d\'interfaces modernes, réactives et intuitives pour tous les écrans.'
                 },
-                network: {
-                    title: 'Réseau & Infra',
-                    description: 'Architecture réseau, administration système et virtualisation pour des infrastructures performantes.'
+                backend: {
+                    title: 'Backend & Systèmes',
+                    description: 'Architectures robustes, API sécurisées et administration système.'
                 },
-                database: {
-                    title: 'Données',
-                    description: 'Modélisation, gestion et optimisation de bases de données pour garantir l\'intégrité et la rapidité d\'accès.'
+                data: {
+                    title: 'Data & I.A.',
+                    description: 'Exploitation des données et intégration d\'intelligence artificielle.'
                 },
-                security: {
-                    title: 'Cybersécurité',
-                    description: 'Analyse des vulnérabilités, tests d\'intrusion et mise en place de stratégies de défense.'
-                },
-                ai: {
-                    title: 'I.A. & Data',
-                    description: 'Exploration des données et développement de modèles d\'apprentissage automatique pour l\'aide à la décision.'
+                project: {
+                    title: 'Gestion & Outils',
+                    description: 'Méthodologies agiles et outils de collaboration pour des projets réussis.'
                 }
             }
         },
@@ -180,29 +176,25 @@ export const translations = {
 
         skills: {
             tag: 'Skills',
-            title: 'My expertise',
-            subtitle: 'A multidisciplinary approach to IT.',
-            tools: 'Mastered Tools',
+            title: 'My Expertise',
+            subtitle: 'A 360° view of development: from code to deployment.',
+            tools: 'Tools',
             categories: {
-                dev: {
-                    title: 'Development',
-                    description: 'Design and development of robust, scalable web and mobile applications focused on user experience.'
+                frontend: {
+                    title: 'Frontend & Mobile',
+                    description: 'Creating modern, reactive, and intuitive interfaces for all screens.'
                 },
-                network: {
-                    title: 'Network & Infra',
-                    description: 'Network architecture, system administration and virtualization for high-performance infrastructures.'
+                backend: {
+                    title: 'Backend & Systems',
+                    description: 'Robust architectures, secure APIs, and system administration.'
                 },
-                database: {
-                    title: 'Data',
-                    description: 'Modeling, management and optimization of databases to ensure integrity and speed of access.'
+                data: {
+                    title: 'Data & A.I.',
+                    description: 'Data exploitation and artificial intelligence integration.'
                 },
-                security: {
-                    title: 'Cybersecurity',
-                    description: 'Vulnerability analysis, penetration testing and implementation of defense strategies.'
-                },
-                ai: {
-                    title: 'A.I. & Data',
-                    description: 'Data mining and development of machine learning models for decision support.'
+                project: {
+                    title: 'Management & Tools',
+                    description: 'Agile methodologies and collaboration tools for successful projects.'
                 }
             }
         },
