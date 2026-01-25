@@ -8,6 +8,7 @@ export const translations = {
         },
 
         hero: {
+            name_highlight: 'El Haroria',
             subtitle_prefix: 'Je suis',
             subtitle_highlight: 'Passionné d\'informatique',
             internship_badge: 'Recherche stage 12-16 semaines (Mars 2026)',
@@ -35,42 +36,90 @@ export const translations = {
 
         skills: {
             tag: 'Compétences',
-            title: 'Mon Expertise',
-            subtitle: 'Une vision 360° du développement : du code au déploiement.',
+            title: 'Mon Expertise & Progression',
+            subtitle: 'Évolution constante du développement à l\'architecture complexe.',
             tools: 'Outils',
             categories: {
-                frontend: {
-                    title: 'Frontend & Mobile',
-                    description: 'Création d\'interfaces modernes, réactives et intuitives pour tous les écrans.'
+                realiser: {
+                    title: 'Réaliser',
+                    subtitle: 'Concevoir, coder, développer',
+                    description: 'Développement d\'applications informatiques complexes (Web, Mobile, Bureau). Maîtrise des langages et frameworks.',
+                    full_title: 'RÉALISER'
                 },
-                backend: {
-                    title: 'Backend & Systèmes',
-                    description: 'Architectures robustes, API sécurisées et administration système.'
+                optimiser: {
+                    title: 'Optimiser',
+                    subtitle: 'Performance & Algorithmique',
+                    description: 'Analyse des performances, optimisation du code, choix des structures de données et algorithmes avancés.',
+                    full_title: 'OPTIMISER'
                 },
-                data: {
-                    title: 'Data & I.A.',
-                    description: 'Exploitation des données et intégration d\'intelligence artificielle.'
+                administrer: {
+                    title: 'Administrer',
+                    subtitle: 'Système, Réseaux & Sécurité',
+                    description: 'Installation, configuration et sécurisation des systèmes d\'exploitation et réseaux (Linux, Windows, Cisco).',
+                    full_title: 'ADMINISTRER'
                 },
-                project: {
-                    title: 'Gestion & Outils',
-                    description: 'Méthodologies agiles et outils de collaboration pour des projets réussis.'
+                gerer: {
+                    title: 'Gérer',
+                    subtitle: 'Données & Patrimoine Informatique',
+                    description: 'Conception et exploitation des bases de données (SQL, NoSQL), RGPD, et gestion des actifs informatiques.',
+                    full_title: 'GÉRER'
+                },
+                conduire: {
+                    title: 'Conduire',
+                    subtitle: 'Gestion de Projet',
+                    description: 'Pilotage de projets, méthodes Agiles (Scrum), analyse des besoins et planification.',
+                    full_title: 'CONDUIRE'
+                },
+                collaborer: {
+                    title: 'Collaborer',
+                    subtitle: 'Travail d\'équipe & Communication',
+                    description: 'Communication professionnelle (Français/Anglais), travail collaboratif et management d\'équipe.',
+                    full_title: 'COLLABORER'
                 }
             }
         },
 
+        timeline: {
+            tag: 'Parcours',
+            title: 'Ma Progression',
+            subtitle: 'Mon itinéraire d\'acquisition de compétences depuis le BUT 1.',
+            steps: [
+                {
+                    year: '2023 - 2024',
+                    title: 'BUT 1 : La Découverte',
+                    description: 'Acquisition des fondamentaux du développement (Algo, C, HTML/CSS). Premiers pas en administration système (Linux) et bases de données.',
+                    icon: 'Compass'
+                },
+                {
+                    year: '2024 - 2025',
+                    title: 'BUT 2 : L\'Approfondissement',
+                    description: 'Développement d\'applications complexes (n-tiers), optimisation des structures de données et administration système avancée (Services réseaux, Virtualisation). Gestion de projets en méthode Agile.',
+                    icon: 'Cpu'
+                },
+                {
+                    year: '2025 - 2026',
+                    title: 'BUT 3 : La Professionnalisation',
+                    description: 'Intégration et déploiement continu (CI/CD), Management d\'équipes techniques et sécurisation des infrastructures. Stage de fin d\'études pour valider l\'expertise professionnelle.',
+                    icon: 'Rocket'
+                }
+            ]
+        },
+
         projects: {
-            tag: 'Projets',
-            title: 'Réalisations',
-            subtitle: 'Une sélection de mes travaux académiques et personnels.',
+            tag: 'Portfolio',
+            title: 'Réalisations & Preuves',
+            subtitle: 'Projets démontrant l\'acquisition concrète des compétences.',
+            view_skills: 'Voir les compétences liées',
             items: [
                 {
                     id: 1,
                     title: 'E-Commerce Platform',
                     category: 'Développement Web',
-                    description: 'Une plateforme de vente en ligne complète avec gestion de panier, paiement Stripe et tableau de bord administrateur.',
+                    description: 'Plateforme complète prouvant la capacité à "Réaliser" et "Gérer" des données transactionnelles.',
                     year: '2025',
                     color: '#8f7aff',
                     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+                    linkedSkills: ['frontend', 'backend', 'data'],
                     github: 'https://github.com',
                     demo: 'https://demo.com'
                 },
@@ -78,10 +127,11 @@ export const translations = {
                     id: 2,
                     title: 'Secure Network Infra',
                     category: 'Réseau & Sécurité',
-                    description: 'Architecture réseau d\'entreprise simulée avec VLANs, VPN site-à-site et firewall pfSense configuré.',
+                    description: 'Architecture réseau validant la compétence "Administrer" et la sécurisation des échanges.',
                     year: '2024',
                     color: '#00d4ff',
                     tags: ['Cisco', 'pfSense', 'VPN', 'VLAN'],
+                    linkedSkills: ['backend', 'devops'],
                     github: 'https://github.com',
                     demo: '#'
                 },
@@ -89,21 +139,23 @@ export const translations = {
                     id: 3,
                     title: 'AI Image Classifier',
                     category: 'Intelligence Artificielle',
-                    description: 'Modèle de Deep Learning capable de classifier des images médicales avec une précision de 95% utilisant CNN.',
+                    description: 'Projet d\'IA illustrant la capacité à "Optimiser" des algorithmes complexes.',
                     year: '2024',
                     color: '#6bcb77',
                     tags: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
+                    linkedSkills: ['data', 'devops'],
                     github: 'https://github.com',
                     demo: '#'
                 },
                 {
                     id: 4,
                     title: 'Task Manager App',
-                    category: 'Développement Mobile',
-                    description: 'Application mobile de productivité permettant la gestion de tâches collaboratives en temps réel.',
+                    category: 'Mobile Development',
+                    description: 'App mobile collaborative, preuve de "Collaborer" et "Conduire" un projet agile.',
                     year: '2023',
                     color: '#ff6b6b',
                     tags: ['Flutter', 'Firebase', 'Dart'],
+                    linkedSkills: ['frontend', 'project'],
                     github: 'https://github.com',
                     demo: '#'
                 }
@@ -149,6 +201,7 @@ export const translations = {
         },
 
         hero: {
+            name_highlight: 'El Haroria',
             subtitle_prefix: 'I am',
             subtitle_highlight: 'Passionate about IT',
             internship_badge: 'Seeking 12-16 week internship (March 2026)',
@@ -176,42 +229,90 @@ export const translations = {
 
         skills: {
             tag: 'Skills',
-            title: 'My Expertise',
-            subtitle: 'A 360° view of development: from code to deployment.',
+            title: 'My Expertise & Progression',
+            subtitle: 'Constant evolution from development to complex architecture.',
             tools: 'Tools',
             categories: {
-                frontend: {
-                    title: 'Frontend & Mobile',
-                    description: 'Creating modern, reactive, and intuitive interfaces for all screens.'
+                realiser: {
+                    title: 'Develop (Réaliser)',
+                    subtitle: 'Design, code, build',
+                    description: 'Development of complex IT applications (Web, Mobile, Desktop). Mastery of languages and frameworks.',
+                    full_title: 'DEVELOP'
                 },
-                backend: {
-                    title: 'Backend & Systems',
-                    description: 'Robust architectures, secure APIs, and system administration.'
+                optimiser: {
+                    title: 'Optimize (Optimiser)',
+                    subtitle: 'Performance & Algorithmic',
+                    description: 'Performance analysis, code optimization, choice of data structures and advanced algorithms.',
+                    full_title: 'OPTIMIZE'
                 },
-                data: {
-                    title: 'Data & A.I.',
-                    description: 'Data exploitation and artificial intelligence integration.'
+                administrer: {
+                    title: 'Administer (Administrer)',
+                    subtitle: 'System, Networks & Security',
+                    description: 'Installation, configuration and security of operating systems and networks (Linux, Windows, Cisco).',
+                    full_title: 'ADMINISTER'
                 },
-                project: {
-                    title: 'Management & Tools',
-                    description: 'Agile methodologies and collaboration tools for successful projects.'
+                gerer: {
+                    title: 'Manage (Gérer)',
+                    subtitle: 'Data & IT Assets',
+                    description: 'Design and operation of databases (SQL, NoSQL), GDPR, and IT asset management.',
+                    full_title: 'MANAGE'
+                },
+                conduire: {
+                    title: 'Lead (Conduire)',
+                    subtitle: 'Project Management',
+                    description: 'Project steering, Agile methods (Scrum), requirements analysis and planning.',
+                    full_title: 'LEAD'
+                },
+                collaborer: {
+                    title: 'Collaborate (Collaborer)',
+                    subtitle: 'Teamwork & Communication',
+                    description: 'Professional communication (French/English), collaborative work and team management.',
+                    full_title: 'COLLABORATE'
                 }
             }
         },
 
+        timeline: {
+            tag: 'Pathway',
+            title: 'My Progression',
+            subtitle: 'My journey of skill acquisition since Year 1.',
+            steps: [
+                {
+                    year: '2023 - 2024',
+                    title: 'Year 1: Discovery',
+                    description: 'Acquiring development fundamentals (Algo, C, HTML/CSS). First steps in system administration (Linux) and databases.',
+                    icon: 'BookOpen'
+                },
+                {
+                    year: '2024 - 2025',
+                    title: 'Year 2: Deepening',
+                    description: 'Skill enhancement on modern frameworks (React, Symfony). Realizing complex projects in teams (Agile).',
+                    icon: 'Code'
+                },
+                {
+                    year: '2025 - 2026',
+                    title: 'Towards Expertise',
+                    description: 'Specialization and professionalization. Seeking internship to apply these robust architectures in a company.',
+                    icon: 'Briefcase'
+                }
+            ]
+        },
+
         projects: {
-            tag: 'Projects',
-            title: 'Portfolio',
-            subtitle: 'A selection of my academic and personal works.',
+            tag: 'Portfolio',
+            title: 'Achievements & Proofs',
+            subtitle: 'Projects demonstrating concrete skill acquisition.',
+            view_skills: 'View related skills',
             items: [
                 {
                     id: 1,
                     title: 'E-Commerce Platform',
                     category: 'Web Development',
-                    description: 'A complete online sales platform with cart management, Stripe payment and administrator dashboard.',
+                    description: 'Complete platform proving the ability to "Build" and "Manage" transactional data.',
                     year: '2025',
                     color: '#8f7aff',
                     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+                    linkedSkills: ['frontend', 'backend', 'data'],
                     github: 'https://github.com',
                     demo: 'https://demo.com'
                 },
@@ -219,10 +320,11 @@ export const translations = {
                     id: 2,
                     title: 'Secure Network Infra',
                     category: 'Network & Security',
-                    description: 'Simulated enterprise network architecture with VLANs, site-to-site VPN and configured pfSense firewall.',
+                    description: 'Network architecture validating "Administer" competence and exchange security.',
                     year: '2024',
                     color: '#00d4ff',
                     tags: ['Cisco', 'pfSense', 'VPN', 'VLAN'],
+                    linkedSkills: ['backend', 'devops'],
                     github: 'https://github.com',
                     demo: '#'
                 },
@@ -230,10 +332,11 @@ export const translations = {
                     id: 3,
                     title: 'AI Image Classifier',
                     category: 'Artificial Intelligence',
-                    description: 'Deep Learning model capable of classifying medical images with 95% accuracy using CNN.',
+                    description: 'AI project illustrating the ability to "Optimize" complex algorithms.',
                     year: '2024',
                     color: '#6bcb77',
                     tags: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
+                    linkedSkills: ['data', 'devops'],
                     github: 'https://github.com',
                     demo: '#'
                 },
@@ -241,10 +344,11 @@ export const translations = {
                     id: 4,
                     title: 'Task Manager App',
                     category: 'Mobile Development',
-                    description: 'Mobile productivity application allowing real-time collaborative task management.',
+                    description: 'Collaborative mobile app, proof of "Collaborate" and "Lead" an agile project.',
                     year: '2023',
                     color: '#ff6b6b',
                     tags: ['Flutter', 'Firebase', 'Dart'],
+                    linkedSkills: ['frontend', 'project'],
                     github: 'https://github.com',
                     demo: '#'
                 }
@@ -277,4 +381,5 @@ export const translations = {
             }
         }
     }
+
 };

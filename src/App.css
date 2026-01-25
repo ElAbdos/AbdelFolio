@@ -84,7 +84,8 @@ body {
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 50px 50px;
     mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    /* use a validator-friendly prefixed fallback */
+    -webkit-mask-image: -webkit-linear-gradient(#fff, #fff);
     opacity: 0.8;
     transition: opacity 0.5s ease;
 }
@@ -112,6 +113,7 @@ body {
     filter: blur(60px);
     animation: glow-float-delayed 18s ease-in-out infinite alternate-reverse;
 }
+
 
 @keyframes glow-float {
     0% {

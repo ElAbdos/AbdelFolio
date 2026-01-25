@@ -1,0 +1,21 @@
+.hero-bio-box {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-bio-box:hover {
+  box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.1);
+}
+
+.hero-bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}

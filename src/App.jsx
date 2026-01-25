@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import Skills from './components/Skills.jsx';
-import Projects from './components/Projects.jsx';
-import Contact from './components/Contact.jsx';
+import Navbar from './components/navbar/Navbar';
+import Hero from './components/hero/Hero';
+import Timeline from './components/timeline/Timeline';
+import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 import './css/GlobalSections.css';
 import './App.css';
 import { ArrowUp } from 'lucide-react';
@@ -45,8 +46,9 @@ function App() {
             </div>
 
             {/* ----- Navigation ----- */}
-            <Navbar isDark={isDark} setIsDark={setIsDark} currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage}/>
+            <Navbar isDark={isDark} setIsDark={setIsDark} currentLanguage={currentLanguage} setCurrentLanguage={setCurrentLanguage} />
             <Hero currentLanguage={currentLanguage} />
+            <Timeline currentLanguage={currentLanguage} />
             <Skills currentLanguage={currentLanguage} />
             <Projects currentLanguage={currentLanguage} />
             <Contact currentLanguage={currentLanguage} />
