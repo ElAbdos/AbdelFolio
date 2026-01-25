@@ -1,0 +1,38 @@
+[data-theme='light'] .timeline-section {
+    background: linear-gradient(180deg, transparent 0%, rgba(143, 122, 255, 0.05) 50%, transparent 100%);
+}
+
+[data-theme='light'] .timeline-content-wrapper {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 255, 0.98) 100%);
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+[data-theme='light'] .timeline-content-wrapper:hover {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 0 40px rgba(143, 122, 255, 0.15);
+}
+
+[data-theme='light'] .timeline-title {
+    background: linear-gradient(135deg, #1a1a2e 0%, #4a4a6a 50%, var(--timeline-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .timeline-item-title {
+    color: #1a1a2e;
+}
+
+[data-theme='light'] .timeline-item-desc {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme='light'] .timeline-dot {
+    background: linear-gradient(145deg, #ffffff 0%, #f0f0f5 100%);
+    border: 3px solid var(--timeline-primary);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 1), 0 5px 20px rgba(143, 122, 255, 0.2), 0 0 30px rgba(143, 122, 255, 0.15);
+}
+
+[data-theme='light'] .timeline-year {
+    background: rgba(143, 122, 255, 0.1);
+    color: var(--timeline-primary);
+}

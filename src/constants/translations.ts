@@ -234,37 +234,37 @@ export const translations = {
             tools: 'Tools',
             categories: {
                 realiser: {
-                    title: 'Develop (Réaliser)',
+                    title: 'Develop',
                     subtitle: 'Design, code, build',
                     description: 'Development of complex IT applications (Web, Mobile, Desktop). Mastery of languages and frameworks.',
                     full_title: 'DEVELOP'
                 },
                 optimiser: {
-                    title: 'Optimize (Optimiser)',
+                    title: 'Optimize',
                     subtitle: 'Performance & Algorithmic',
                     description: 'Performance analysis, code optimization, choice of data structures and advanced algorithms.',
                     full_title: 'OPTIMIZE'
                 },
                 administrer: {
-                    title: 'Administer (Administrer)',
+                    title: 'Administer',
                     subtitle: 'System, Networks & Security',
                     description: 'Installation, configuration and security of operating systems and networks (Linux, Windows, Cisco).',
                     full_title: 'ADMINISTER'
                 },
                 gerer: {
-                    title: 'Manage (Gérer)',
+                    title: 'Manage',
                     subtitle: 'Data & IT Assets',
                     description: 'Design and operation of databases (SQL, NoSQL), GDPR, and IT asset management.',
                     full_title: 'MANAGE'
                 },
                 conduire: {
-                    title: 'Lead (Conduire)',
+                    title: 'Lead',
                     subtitle: 'Project Management',
                     description: 'Project steering, Agile methods (Scrum), requirements analysis and planning.',
                     full_title: 'LEAD'
                 },
                 collaborer: {
-                    title: 'Collaborate (Collaborer)',
+                    title: 'Collaborate',
                     subtitle: 'Teamwork & Communication',
                     description: 'Professional communication (French/English), collaborative work and team management.',
                     full_title: 'COLLABORATE'

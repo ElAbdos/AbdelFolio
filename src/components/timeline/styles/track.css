@@ -1,0 +1,46 @@
+.timeline-track {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(180deg,
+        transparent 0%,
+        rgba(143, 122, 255, 0.2) 10%,
+        rgba(143, 122, 255, 0.2) 90%,
+        transparent 100%);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.timeline-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    background: #3b82f6;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: height 0.3s ease-out;
+    box-shadow: 0 0 20px var(--timeline-glow), 0 0 40px var(--timeline-glow);
+}
+
+.timeline-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, var(--timeline-primary) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(4px);
+    animation: progressGlow 2s ease-in-out infinite;
+}

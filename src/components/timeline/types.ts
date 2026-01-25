@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Language = 'FR' | 'EN';
 
 export interface TimelineStep {
@@ -5,13 +7,6 @@ export interface TimelineStep {
   title: string;
   description: string;
   icon: string;
-}
-
-export interface TimelineTranslations {
-  tag: string;
-  title: string;
-  subtitle: string;
-  steps: TimelineStep[];
 }
 
 export interface TimelineProps {

@@ -1,1 +1,9 @@
-@import './timeline.css';
+@import './base.css';
+@import './background.css';
+@import './header.css';
+@import './track.css';
+@import './items.css';
+@import './animations.css';
+@import './theme.css';
+@import './responsive.css';
+@import './accessibility.css';

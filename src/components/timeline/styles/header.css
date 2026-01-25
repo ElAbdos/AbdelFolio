@@ -1,0 +1,44 @@
+.timeline-header {
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.timeline-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(143, 122, 255, 0.08);
+    border: 1px solid rgba(143, 122, 255, 0.2);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--timeline-primary);
+    margin-bottom: 28px;
+    backdrop-filter: blur(10px);
+    animation: tagFloat 4s ease-in-out infinite;
+}
+
+.timeline-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 50%, var(--timeline-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -2px;
+}
+
+.timeline-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
