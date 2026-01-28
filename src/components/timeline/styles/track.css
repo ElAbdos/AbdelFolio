@@ -2,7 +2,6 @@
     position: relative;
     padding: 40px 0;
 }
-
 .timeline-line {
     position: absolute;
     top: 0;
@@ -18,7 +17,6 @@
     border-radius: 2px;
     z-index: 1;
 }
-
 .timeline-progress-bar {
     position: absolute;
     top: 0;
@@ -30,7 +28,6 @@
     transition: height 0.3s ease-out;
     box-shadow: 0 0 20px var(--timeline-glow), 0 0 40px var(--timeline-glow);
 }
-
 .timeline-progress-bar::after {
     content: '';
     position: absolute;

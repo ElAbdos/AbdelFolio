@@ -3,18 +3,15 @@
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
     .contact-info-col {
         position: static;
         order: 2;
     }
-
     .footer-content {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
-
     .section-subtitle {
         padding: 0 20px;
     }

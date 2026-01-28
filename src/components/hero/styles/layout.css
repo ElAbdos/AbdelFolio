@@ -7,11 +7,9 @@
   position: relative;
   overflow: hidden;
 }
-
 .hero-section {
   padding-top: 120px !important;
 }
-
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,14 +18,12 @@
   width: 100%;
   z-index: 1;
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   animation: fadeInUp 0.8s ease-out;
 }
-
 .hero-visuals {
   display: flex;
   align-items: center;
@@ -35,13 +31,11 @@
   animation: fadeInRight 0.8s ease-out 0.3s backwards;
   flex-direction: column;
 }
-
 .hero-visuals {
   align-items: center !important;
   justify-content: flex-start !important;
   padding-top: 20px !important;
 }
-
 .glow-bg {
   position: absolute;
   width: 600px;

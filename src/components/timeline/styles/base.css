@@ -3,7 +3,6 @@
     --timeline-primary-rgb: 143, 122, 255;
     --timeline-glow: rgba(143, 122, 255, 0.4);
 }
-
 .timeline-section {
     position: relative;
     padding: 120px 20px;
@@ -11,7 +10,6 @@
     overflow: hidden;
     background: linear-gradient(180deg, transparent 0%, rgba(143, 122, 255, 0.03) 50%, transparent 100%);
 }
-
 .timeline-container {
     max-width: 1400px;
     margin: 0 auto;

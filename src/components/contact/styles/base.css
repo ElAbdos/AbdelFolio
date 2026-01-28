@@ -3,19 +3,16 @@
     position: relative;
     overflow: hidden;
 }
-
 .contact-container {
     max-width: 1100px;
     margin: 0 auto 100px;
 }
-
 .contact-content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 60px;
     align-items: start;
 }
-
 .text-gradient {
     background: linear-gradient(135deg, var(--text-gradient-start), var(--text-gradient-end));
     background-clip: text;

@@ -4,7 +4,6 @@
   padding: 5px 0;
   text-decoration: none;
 }
-
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
@@ -17,14 +16,12 @@
   -webkit-text-fill-color: transparent;
   animation: gradient 4s ease infinite;
 }
-
 .logo-folio {
   background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .logo-underline {
   position: absolute;
   bottom: 0;
@@ -34,7 +31,6 @@
   background: linear-gradient(90deg, transparent, var(--text-accent), transparent);
   transition: width 0.4s ease;
 }
-
 .logo-container:hover .logo-underline {
   width: 100%;
 }

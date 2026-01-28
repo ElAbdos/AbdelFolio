@@ -5,7 +5,6 @@
     position: sticky;
     top: 120px;
 }
-
 .email-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(var(--accent-rgb), 0.15);
@@ -19,14 +18,12 @@
     position: relative;
     overflow: hidden;
 }
-
 .email-card:hover {
     background: rgba(var(--accent-rgb), 0.08);
     border-color: rgba(var(--accent-rgb), 0.3);
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.1);
 }
-
 .email-icon-circle {
     width: 48px;
     height: 48px;
@@ -37,12 +34,10 @@
     justify-content: center;
     color: var(--text-accent);
 }
-
 .email-details {
     flex: 1;
     overflow: hidden;
 }
-
 .email-label {
     font-size: 12px;
     text-transform: uppercase;
@@ -51,7 +46,6 @@
     display: block;
     margin-bottom: 4px;
 }
-
 .email-address {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -61,16 +55,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .copy-icon {
     color: var(--text-secondary);
     transition: color 0.2s ease;
 }
-
 .email-card:hover .copy-icon {
     color: var(--text-primary);
 }
-
 .location-badge {
     align-self: flex-start;
     display: flex;
@@ -83,18 +74,15 @@
     color: var(--text-secondary);
     font-size: 14px;
 }
-
 .location-icon {
     color: var(--text-accent);
 }
-
 .social-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-top: 10px;
 }
-
 .social-card {
     display: flex;
     align-items: center;
@@ -108,29 +96,24 @@
     font-weight: 500;
     transition: all 0.3s ease;
 }
-
 .social-card:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
-
 .social-card.linkedin:hover {
     border-color: #0077b5;
     color: #0077b5;
     background: rgba(0, 119, 181, 0.05);
 }
-
 .social-card.github:hover {
     border-color: #f0f6fc;
     color: #f0f6fc;
 }
-
 .social-arrow {
     opacity: 0.5;
     transition: transform 0.3s ease;
 }
-
 .social-card:hover .social-arrow {
     opacity: 1;
     transform: translate(2px, -2px);

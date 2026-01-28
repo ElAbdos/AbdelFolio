@@ -8,33 +8,27 @@
     transform: translateY(60px) scale(0.95);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .timeline-item.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
-
 .timeline-item:last-child {
     margin-bottom: 0;
 }
-
 .timeline-item.left {
     flex-direction: row;
     justify-content: flex-start;
 }
-
 .timeline-item.right {
     flex-direction: row;
     justify-content: flex-end;
 }
-
 .timeline-item:nth-child(1) { transition-delay: 0.1s; }
 .timeline-item:nth-child(2) { transition-delay: 0.2s; }
 .timeline-item:nth-child(3) { transition-delay: 0.3s; }
 .timeline-item:nth-child(4) { transition-delay: 0.4s; }
 .timeline-item:nth-child(5) { transition-delay: 0.5s; }
 .timeline-item:nth-child(6) { transition-delay: 0.6s; }
-
 .timeline-content-wrapper {
     width: calc(50% - 160px);
     position: relative;
@@ -48,7 +42,6 @@
     cursor: default;
     overflow: hidden;
 }
-
 .timeline-content-wrapper::before {
     content: '';
     position: absolute;
@@ -63,11 +56,9 @@
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-
 .timeline-content-wrapper:hover::before {
     opacity: 1;
 }
-
 .timeline-content-wrapper::after {
     content: '';
     position: absolute;
@@ -79,11 +70,9 @@
     transition: opacity 0.5s ease;
     pointer-events: none;
 }
-
 .timeline-content-wrapper:hover::after {
     opacity: 1;
 }
-
 .timeline-content-wrapper:hover {
     transform: translateY(-8px);
     border-color: rgba(143, 122, 255, 0.3);
@@ -92,7 +81,6 @@
         0 0 40px rgba(143, 122, 255, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
-
 .timeline-content-wrapper .arrow {
     position: absolute;
     top: 40px;
@@ -101,35 +89,28 @@
     border-style: solid;
     transition: all 0.3s ease;
 }
-
 .timeline-item.left .timeline-content-wrapper .arrow {
     right: -12px;
     border-width: 12px 14px 12px 0;
     border-color: transparent rgba(20, 22, 28, 0.9) transparent transparent;
 }
-
 .timeline-item.right .timeline-content-wrapper .arrow {
     left: -12px;
     border-width: 12px 0 12px 14px;
     border-color: transparent transparent transparent rgba(20, 22, 28, 0.9);
 }
-
 .timeline-item.left .timeline-content-wrapper {
     border-right: 3px solid transparent;
 }
-
 .timeline-item.right .timeline-content-wrapper {
     border-left: 3px solid transparent;
 }
-
 .timeline-item.left .timeline-content-wrapper:hover {
     border-right-color: var(--timeline-primary);
 }
-
 .timeline-item.right .timeline-content-wrapper:hover {
     border-left-color: var(--timeline-primary);
 }
-
 .timeline-dot {
     position: absolute;
     left: 50%;
@@ -146,28 +127,23 @@
     box-shadow: 0 0 0 10px rgba(15, 17, 23, 1), 0 10px 30px rgba(0, 0, 0, 0.5);
     transform: translateX(-50%);
 }
-
 .timeline-dot svg {
     color: rgba(255, 255, 255, 0.3);
     transition: all 0.4s ease;
 }
-
 .timeline-dot.active {
     border-color: var(--timeline-primary);
     box-shadow: 0 0 0 10px rgba(15, 17, 23, 1), 0 0 40px var(--timeline-glow), 0 0 80px var(--timeline-glow);
     transform: translateX(-50%) scale(1.1);
 }
-
 .timeline-dot:hover {
     border-color: var(--timeline-primary);
     transform: translateX(-50%) scale(1.2);
 }
-
 .timeline-dot:hover svg {
     transform: rotate(360deg);
     color: var(--timeline-primary);
 }
-
 .timeline-dot.active::after {
     content: '';
     position: absolute;
@@ -176,7 +152,6 @@
     border-radius: 50%;
     animation: dotPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
 .timeline-dot.active::before {
     content: '';
     position: absolute;
@@ -188,17 +163,14 @@
     border-radius: 2px;
     z-index: -1;
 }
-
 .timeline-item.left .timeline-dot.active::before {
     right: 100%;
     background: linear-gradient(90deg, var(--timeline-primary) 0%, rgba(143, 122, 255, 0.3) 100%);
 }
-
 .timeline-item.right .timeline-dot.active::before {
     left: 100%;
     background: linear-gradient(270deg, var(--timeline-primary) 0%, rgba(143, 122, 255, 0.3) 100%);
 }
-
 .timeline-year {
     display: inline-flex;
     align-items: center;
@@ -215,12 +187,10 @@
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
-
 .timeline-content-wrapper:hover .timeline-year {
     background: rgba(143, 122, 255, 0.2);
     box-shadow: 0 0 20px rgba(143, 122, 255, 0.2);
 }
-
 .timeline-item-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 26px;
@@ -230,7 +200,6 @@
     line-height: 1.3;
     letter-spacing: -0.5px;
 }
-
 .timeline-item-desc {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
@@ -238,14 +207,11 @@
     position: relative;
     z-index: 1;
 }
-
-/* ----- Experiences Professionnelles ----- */
 .timeline-experiences {
     margin-top: 28px;
     padding-top: 24px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
-
 .experiences-label {
     font-size: 11px;
     text-transform: uppercase;
@@ -254,7 +220,6 @@
     margin-bottom: 16px;
     font-weight: 600;
 }
-
 .timeline-experience {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -263,40 +228,33 @@
     margin-bottom: 12px;
     transition: all 0.3s ease;
 }
-
 .timeline-experience:last-child {
     margin-bottom: 0;
 }
-
 .timeline-experience:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(143, 122, 255, 0.2);
 }
-
 .timeline-experience.searching {
     background: linear-gradient(135deg, rgba(143, 122, 255, 0.08) 0%, rgba(143, 122, 255, 0.03) 100%);
     border-color: rgba(143, 122, 255, 0.2);
 }
-
 .exp-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
-
 .exp-company {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .exp-company-name {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
 }
-
 .exp-status {
     font-size: 10px;
     padding: 4px 10px;
@@ -308,38 +266,32 @@
     align-items: center;
     gap: 4px;
 }
-
 .exp-status.completed {
     background: rgba(107, 203, 119, 0.15);
     color: #6bcb77;
     border: 1px solid rgba(107, 203, 119, 0.3);
 }
-
 .exp-status.in-progress {
     background: rgba(255, 193, 7, 0.15);
     color: #ffc107;
     border: 1px solid rgba(255, 193, 7, 0.3);
 }
-
 .exp-status.searching {
     background: rgba(143, 122, 255, 0.15);
     color: #8f7aff;
     border: 1px solid rgba(143, 122, 255, 0.3);
 }
-
 .exp-position {
     font-size: 13px;
     color: var(--timeline-primary);
     margin-bottom: 6px;
     font-weight: 500;
 }
-
 .exp-duration {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.4);
     margin-bottom: 10px;
 }
-
 .exp-description {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.5);

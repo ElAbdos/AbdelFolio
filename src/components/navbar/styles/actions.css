@@ -3,7 +3,6 @@
   align-items: center;
   gap: 12px;
 }
-
 .btn-theme, .btn-language, .btn-hamburger {
   position: relative;
   display: flex;
@@ -17,23 +16,19 @@
   transition: all 0.3s ease;
   overflow: hidden;
 }
-
 .btn-theme:hover, .btn-language:hover, .btn-hamburger:hover {
   border-color: rgba(var(--accent-rgb), 0.4);
   background: rgba(var(--accent-rgb), 0.1);
   color: var(--text-primary);
   box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.2);
 }
-
 .btn-theme:active, .btn-language:active, .btn-hamburger:active {
   transform: scale(0.95);
 }
-
 .btn-theme {
   width: 44px;
   height: 44px;
 }
-
 .btn-icon {
   position: relative;
   display: flex;
@@ -41,19 +36,15 @@
   justify-content: center;
   transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 .btn-icon.rotated {
   transform: rotate(180deg);
 }
-
 .btn-theme:hover .btn-icon {
   transform: rotate(20deg);
 }
-
 .btn-theme:hover .btn-icon.rotated {
   transform: rotate(200deg);
 }
-
 .btn-language {
   padding: 0 16px;
   height: 44px;
@@ -61,32 +52,26 @@
   font-weight: 500;
   font-size: 14px;
 }
-
 .btn-language-content {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .language-flag {
   font-size: 16px;
   line-height: 1;
 }
-
 .language-arrow {
   font-size: 10px;
   transition: transform 0.3s ease;
   margin-left: 2px;
 }
-
 .language-arrow.rotate {
   transform: rotate(180deg);
 }
-
 .language-wrapper {
   position: relative;
 }
-
 .language-dropdown {
   position: absolute;
   top: calc(100% + 12px);
@@ -104,13 +89,11 @@
   pointer-events: none;
   padding: 6px;
 }
-
 .language-dropdown.show {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: auto;
 }
-
 .language-option {
   width: 100%;
   padding: 12px 16px;
@@ -127,26 +110,21 @@
   align-items: center;
   gap: 10px;
 }
-
 .language-option-flag {
   font-size: 18px;
   line-height: 1;
 }
-
 .language-option-text {
   flex: 1;
 }
-
 .language-option:hover {
   background: rgba(var(--accent-rgb), 0.15);
   color: var(--text-primary);
 }
-
 .language-option.active {
   background: rgba(var(--accent-rgb), 0.1);
   color: var(--text-accent);
 }
-
 .language-option.active::after {
   content: '';
   display: block;
@@ -156,14 +134,12 @@
   background: var(--text-accent);
   box-shadow: 0 0 8px var(--text-accent);
 }
-
 .btn-hamburger {
   display: flex;
   width: 44px;
   height: 44px;
   margin-left: 4px;
 }
-
 @media (min-width: 768px) {
   .btn-hamburger {
     display: none;

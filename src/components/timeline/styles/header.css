@@ -3,7 +3,6 @@
     margin-bottom: 100px;
     position: relative;
 }
-
 .timeline-tag {
     display: inline-flex;
     align-items: center;
@@ -21,7 +20,6 @@
     backdrop-filter: blur(10px);
     animation: tagFloat 4s ease-in-out infinite;
 }
-
 .timeline-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(42px, 6vw, 68px);
@@ -34,7 +32,6 @@
     background-clip: text;
     letter-spacing: -2px;
 }
-
 .timeline-subtitle {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);

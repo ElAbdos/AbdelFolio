@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap');
-
+@import url('https:
 .navbar {
   position: fixed;
   top: 20px;
@@ -21,17 +20,14 @@
   padding: 0 32px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .navbar:hover {
   border-color: var(--nav-hover-border);
   box-shadow: 0 12px 40px rgba(var(--accent-rgb), 0.15);
 }
-
 .navbar.scrolled {
   top: 15px;
   height: 70px;
 }
-
 @media (max-width: 768px) {
   .navbar {
     width: 92%;
@@ -39,7 +35,6 @@
     height: 70px;
     top: 15px;
   }
-
   .navbar.scrolled {
     top: 10px;
     width: 95%;

@@ -1,6 +1,4 @@
-/* ==========================================================================
-   THÈME SOMBRE
-   ========================================================================== */
+
 :root {
    --bg-primary: #050505;
    --bg-secondary: #101010;
@@ -28,32 +26,29 @@
    --accent-color: var(--card-color);
 }
 
-/* ==========================================================================
-   THÈME CLAIR
-   ========================================================================== */
 [data-theme='light'] {
-   --bg-primary: #f8f9fa;
+   --bg-primary: #f5f7fc;
    --bg-secondary: #ffffff;
-   --text-primary: #111111;
-   --text-secondary: #444444;
-   --text-accent: #d63384;
-   --text-gradient-start: #d63384;
-   --text-gradient-mid: #e85d9c;
-   --text-gradient-end: #d63384;
-   --nav-bg: rgba(255, 255, 255, 0.95);
-   --nav-border: rgba(0, 0, 0, 0.1);
-   --nav-hover-border: rgba(214, 51, 132, 0.4);
-   --nav-shadow: rgba(0, 0, 0, 0.05);
+   --text-primary: #1a1a2e;
+   --text-secondary: #4a4a6a;
+   --text-accent: #7c6df0;
+   --text-gradient-start: #7c6df0;
+   --text-gradient-mid: #9d8fff;
+   --text-gradient-end: #7c6df0;
+   --nav-bg: rgba(255, 255, 255, 0.9);
+   --nav-border: rgba(0, 0, 0, 0.08);
+   --nav-hover-border: rgba(124, 109, 240, 0.3);
+   --nav-shadow: rgba(0, 0, 0, 0.08);
    --card-bg: #ffffff;
-   --card-border: rgba(0, 0, 0, 0.1);
-   --grid-color: rgba(0, 0, 0, 0.05);
-   --glow-color: rgba(214, 51, 132, 0.05);
-   --glow-secondary: rgba(255, 182, 193, 0.15);
-   --accent-rgb: 214, 51, 132;
-   --btn-border: rgba(0, 0, 0, 0.1);
-   --element-bg: rgba(0, 0, 0, 0.04);
-   --element-border: rgba(0, 0, 0, 0.1);
-   --element-hover: rgba(0, 0, 0, 0.08);
-   --card-color: #d63384;
+   --card-border: rgba(0, 0, 0, 0.08);
+   --grid-color: rgba(124, 109, 240, 0.04);
+   --glow-color: rgba(124, 109, 240, 0.08);
+   --glow-secondary: rgba(157, 143, 255, 0.1);
+   --accent-rgb: 124, 109, 240;
+   --btn-border: rgba(0, 0, 0, 0.12);
+   --element-bg: rgba(0, 0, 0, 0.03);
+   --element-border: rgba(0, 0, 0, 0.08);
+   --element-hover: rgba(0, 0, 0, 0.06);
+   --card-color: #7c6df0;
    --accent-color: var(--card-color);
 }

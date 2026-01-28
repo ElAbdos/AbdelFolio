@@ -7,7 +7,6 @@
         transform: translateY(-5px);
     }
 }
-
 @keyframes slowRotate {
     from {
         transform: rotate(0deg);
@@ -16,7 +15,6 @@
         transform: rotate(360deg);
     }
 }
-
 @keyframes orbitRotate {
     from {
         transform: rotate(0deg);
@@ -25,7 +23,6 @@
         transform: rotate(360deg);
     }
 }
-
 @keyframes centerPulse {
     0%,
     100% {
@@ -35,7 +32,6 @@
         box-shadow: 0 0 50px rgba(143, 122, 255, 0.25);
     }
 }
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -44,7 +40,6 @@
         transform: rotate(360deg);
     }
 }
-
 @keyframes glowPulse {
     0%,
     100% {
@@ -54,7 +49,6 @@
         opacity: 0.8;
     }
 }
-
 @keyframes pulseRing {
     0% {
         transform: translate(-50%, -50%) scale(0.85);
@@ -65,7 +59,6 @@
         opacity: 0;
     }
 }
-
 @keyframes cardEnter {
     from {
         opacity: 0;
@@ -76,7 +69,6 @@
         transform: translateY(0);
     }
 }
-
 @keyframes tagIn {
     from {
         opacity: 0;
@@ -87,7 +79,6 @@
         transform: translateY(0) scale(1);
     }
 }
-
 @keyframes chipIn {
     from {
         opacity: 0;

@@ -1,13 +1,135 @@
+
+[data-theme='light'] .projects-section {
+    background: linear-gradient(180deg, #f5f7fc 0%, #eef2f8 100%);
+}
+[data-theme='light'] .projects-badge {
+    background: rgba(143, 122, 255, 0.15);
+    border-color: rgba(143, 122, 255, 0.35);
+}
+[data-theme='light'] .projects-title {
+    background: linear-gradient(135deg, #1a1a2e 0%, #4a4a6a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+[data-theme='light'] .projects-subtitle {
+    color: #333;
+}
+[data-theme='light'] .carousel-control {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #1a1a2e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+[data-theme='light'] .carousel-control:hover:not(:disabled) {
+    background: #8f7aff;
+    color: white;
+}
+[data-theme='light'] .carousel-control:disabled {
+    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.05);
+}
+[data-theme='light'] .indicator-dot {
+    background: rgba(0, 0, 0, 0.15);
+}
+[data-theme='light'] .indicator-dot.active {
+    background: #8f7aff;
+}
 [data-theme='light'] .project-card-3d {
-    background: rgba(255, 255, 255, 0.98);
-    border-color: rgba(0, 0, 0, 0.05);
+    background: linear-gradient(165deg, #ffffff 0%, #f8f9fc 100%);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 1) inset;
 }
-
-[data-theme='light'] .project-linked-skills {
-    border-top-color: rgba(0, 0, 0, 0.1);
+[data-theme='light'] .project-card-3d.active {
+    border-color: rgba(var(--card-color-rgb), 0.5);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(var(--card-color-rgb), 0.3),
+        0 0 60px rgba(var(--card-color-rgb), 0.2);
 }
-
+[data-theme='light'] .project-card-3d.prev,
+[data-theme='light'] .project-card-3d.next {
+    background: linear-gradient(165deg, #eef2f8 0%, #e5e9f0 100%);
+    filter: brightness(0.9) blur(0.5px) grayscale(0.2);
+}
+[data-theme='light'] .project-card-3d.active:hover {
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(var(--card-color-rgb), 0.5),
+        0 0 80px rgba(var(--card-color-rgb), 0.25);
+}
+[data-theme='light'] .project-visual {
+    background: radial-gradient(circle at center, rgba(var(--card-color-rgb), 0.15) 0%, transparent 70%);
+}
+[data-theme='light'] .project-visual-overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+[data-theme='light'] .project-logo {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 0 20px rgba(var(--card-color-rgb), 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 1);
+}
+[data-theme='light'] .project-initials {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+[data-theme='light'] .project-year {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+[data-theme='light'] .project-info {
+    background: linear-gradient(180deg, #ffffff 0%, #f8f9fc 100%);
+}
+[data-theme='light'] .project-title {
+    color: #1a1a2e;
+}
+[data-theme='light'] .project-desc {
+    color: #4a4a6a;
+}
+[data-theme='light'] .project-section-label {
+    color: #666;
+}
+[data-theme='light'] .section-label-text {
+    color: #666;
+}
 [data-theme='light'] .project-tag {
-    background: rgba(0, 0, 0, 0.03);
-    border-color: rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+[data-theme='light'] .project-tag:hover {
+    background: rgba(0, 0, 0, 0.08);
+    color: #1a1a2e;
+}
+[data-theme='light'] .skill-category-badge {
+    background: transparent;
+    border-color: rgba(var(--skill-color-rgb), 0.6);
+}
+[data-theme='light'] .skill-category-badge:hover {
+    background: var(--skill-color);
+    color: #fff;
+}
+[data-theme='light'] .project-btn.github {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #1a1a2e;
+}
+[data-theme='light'] .project-btn.github:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+[data-theme='light'] .project-btn.demo {
+    background: var(--card-color);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(var(--card-color-rgb), 0.35);
+}
+[data-theme='light'] .project-info::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+}
+[data-theme='light'] .project-info::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
 }

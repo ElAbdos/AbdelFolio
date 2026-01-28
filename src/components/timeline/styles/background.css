@@ -11,7 +11,6 @@
     opacity: 0.5;
     pointer-events: none;
 }
-
 .timeline-bg-glow {
     position: absolute;
     top: 20%;
@@ -24,7 +23,6 @@
     opacity: 0.3;
     pointer-events: none;
 }
-
 .timeline-bg-orb {
     position: absolute;
     width: 400px;
@@ -35,21 +33,18 @@
     pointer-events: none;
     animation: orbFloat 20s ease-in-out infinite;
 }
-
 .timeline-bg-orb.top-left {
     top: 10%;
     left: 5%;
     background: var(--timeline-primary);
     animation-delay: 0s;
 }
-
 .timeline-bg-orb.bottom-right {
     bottom: 10%;
     right: 5%;
     background: var(--timeline-primary);
     animation-delay: -10s;
 }
-
 .timeline-particles {
     position: absolute;
     top: 0;
@@ -59,7 +54,6 @@
     pointer-events: none;
     overflow: hidden;
 }
-
 .timeline-particle {
     position: absolute;
     width: 4px;
@@ -69,7 +63,6 @@
     opacity: 0.3;
     animation: particleFloat 15s linear infinite;
 }
-
 .timeline-particle:nth-child(1) { left: 10%; animation-delay: 0s; }
 .timeline-particle:nth-child(2) { left: 30%; animation-delay: -5s; }
 .timeline-particle:nth-child(3) { left: 50%; animation-delay: -10s; }

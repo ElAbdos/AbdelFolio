@@ -8,7 +8,6 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
     scroll-behavior: smooth;
 }
-
 .scroll-indicator {
     position: fixed;
     top: 0;
@@ -18,14 +17,12 @@ body {
     background: rgba(255, 255, 255, 0.05);
     z-index: 100;
 }
-
 .scroll-progress {
     height: 100%;
     background: linear-gradient(90deg, var(--text-gradient-start), var(--text-gradient-end));
     transition: width 0.1s ease-out;
     box-shadow: 0 0 10px var(--text-accent);
 }
-
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -47,24 +44,20 @@ body {
     z-index: 50;
     backdrop-filter: blur(10px);
 }
-
 .back-to-top.visible {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-
 .back-to-top:hover {
     background: rgba(var(--accent-rgb), 0.25);
     border-color: var(--text-accent);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(var(--accent-rgb), 0.3);
 }
-
 .back-to-top:active {
     transform: translateY(0);
 }
-
 .app-background {
     position: fixed;
     top: 0;
@@ -75,7 +68,6 @@ body {
     background: var(--bg-primary);
     transition: background-color 0.5s ease;
 }
-
 .app-grid {
     position: absolute;
     inset: 0;
@@ -84,12 +76,10 @@ body {
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 50px 50px;
     mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-    /* use a validator-friendly prefixed fallback */
     -webkit-mask-image: -webkit-linear-gradient(#fff, #fff);
     opacity: 0.8;
     transition: opacity 0.5s ease;
 }
-
 .app-glow {
     position: absolute;
     top: -20%;
@@ -101,7 +91,6 @@ body {
     animation: glow-float 15s ease-in-out infinite alternate;
     transition: background 0.5s ease;
 }
-
 .app-glow::after {
     content: '';
     position: absolute;
@@ -113,28 +102,22 @@ body {
     filter: blur(60px);
     animation: glow-float-delayed 18s ease-in-out infinite alternate-reverse;
 }
-
-
 @keyframes glow-float {
     0% {
         transform: translate(0, 0);
     }
-
     100% {
         transform: translate(10%, 10%);
     }
 }
-
 @keyframes glow-float-delayed {
     0% {
         transform: translate(0, 0);
     }
-
     100% {
         transform: translate(-10%, -5%);
     }
 }
-
 ::selection {
     background: rgba(var(--accent-rgb), 0.3);
     color: var(--text-primary);

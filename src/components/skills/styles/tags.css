@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     gap: 14px;
 }
-
 .skill-tag {
     display: inline-flex;
     align-items: center;
@@ -21,7 +20,6 @@
     position: relative;
     overflow: hidden;
 }
-
 .skill-tag::before {
     content: '';
     position: absolute;
@@ -34,17 +32,14 @@
     transition: opacity 0.3s ease;
     z-index: -1;
 }
-
 .skill-tag:hover {
     border-color: var(--color);
     transform: translateY(-4px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 0 30px rgba(var(--color-rgb), 0.25);
 }
-
 .skill-tag:hover::before {
     opacity: 0.15;
 }
-
 .skill-tag-dot {
     width: 8px;
     height: 8px;
@@ -54,14 +49,11 @@
     flex-shrink: 0;
     display: none;
 }
-
-/* ----- Tools Grid ----- */
 .tools-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
-
 .tool-chip {
     display: inline-flex;
     align-items: center;
@@ -77,7 +69,6 @@
     transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
     animation: chipIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--delay) + 0.6s) both;
 }
-
 .tool-chip:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: var(--color);
@@ -85,17 +76,13 @@
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(var(--color-rgb), 0.3);
 }
-
 .tool-chip svg {
     color: var(--color);
     transition: transform 0.3s ease;
 }
-
 .tool-chip:hover svg {
     transform: translateX(3px);
 }
-
-/* ----- Mobile Navigation ----- */
 .skills-mobile-nav {
     display: flex;
     gap: 8px;
@@ -108,11 +95,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .skills-mobile-nav::-webkit-scrollbar {
     display: none;
 }
-
 .mobile-nav-item {
     display: flex;
     align-items: center;
@@ -129,20 +114,17 @@
     white-space: nowrap;
     flex-shrink: 0;
 }
-
 .mobile-nav-item:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.15);
     color: var(--text-primary);
 }
-
 .mobile-nav-item.active {
     background: var(--color);
     border-color: transparent;
     color: #000;
     box-shadow: 0 10px 30px rgba(var(--color-rgb), 0.4);
 }
-
 .mobile-nav-item.active svg {
     color: #000;
 }

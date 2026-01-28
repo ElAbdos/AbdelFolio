@@ -5,7 +5,6 @@
     aspect-ratio: 1;
     z-index: 10;
 }
-
 .skills-orbit-ring {
     position: absolute;
     top: 50%;
@@ -15,7 +14,6 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-
 .skills-orbit-ring::before {
     content: '';
     position: absolute;
@@ -27,7 +25,6 @@
     border-radius: 50%;
     animation: slowRotate 60s linear infinite;
 }
-
 .skills-orbit-ring::after {
     content: '';
     position: absolute;
@@ -38,7 +35,6 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 50%;
 }
-
 .skills-orbit-ring .orbit-progress-line {
     position: absolute;
     top: 0;
@@ -52,8 +48,6 @@
     animation: orbitRotate 3s linear infinite;
     filter: drop-shadow(0 0 8px var(--current-color, #8f7aff));
 }
-
-/* ----- Orbit Center ----- */
 .skills-orbit-center {
     position: absolute;
     top: 50%;
@@ -73,7 +67,6 @@
     z-index: 5;
     animation: centerPulse 4s ease-in-out infinite;
 }
-
 .skills-orbit-center::before {
     content: '';
     position: absolute;
@@ -87,7 +80,6 @@
     opacity: 0.5;
     animation: spin 8s linear infinite;
 }
-
 .skills-orbit-center::after {
     content: '';
     position: absolute;
@@ -96,7 +88,6 @@
     border-radius: 50%;
     z-index: -1;
 }
-
 .orbit-center-label {
     font-size: 10px;
     text-transform: uppercase;
@@ -104,7 +95,6 @@
     color: rgba(255, 255, 255, 0.5);
     font-weight: 600;
 }
-
 .orbit-center-number {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 32px;
@@ -112,8 +102,6 @@
     color: var(--current-color, #8f7aff);
     text-shadow: 0 0 20px var(--current-color, #8f7aff);
 }
-
-/* ----- Orbit Items ----- */
 .orbit-item {
     position: absolute;
     top: 50%;
@@ -132,8 +120,6 @@
     z-index: 20;
     pointer-events: auto;
 }
-
-/* Connexion au centre - Tous pointent vers Domaine */
 .orbit-item::before {
     content: '';
     position: absolute;
@@ -148,13 +134,10 @@
     transition: opacity 0.4s ease;
     pointer-events: none;
 }
-
 .orbit-item:hover::before,
 .orbit-item.active::before {
     opacity: 0.6;
 }
-
-/* Glow effect */
 .orbit-item::after {
     content: '';
     position: absolute;
@@ -166,11 +149,9 @@
     transition: opacity 0.4s ease;
     filter: blur(12px);
 }
-
 .orbit-item:hover::after {
     opacity: 0.4;
 }
-
 .orbit-item:hover {
     transform: rotate(var(--angle)) translateX(215px) rotate(calc(-1 * var(--angle))) scale(1.08);
     border-color: var(--color);
@@ -180,7 +161,6 @@
         0 0 40px rgba(var(--color-rgb), 0.3),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
 }
-
 .orbit-item.active {
     background: linear-gradient(145deg, rgba(15, 17, 23, 0.95) 0%, rgba(25, 27, 35, 0.95) 100%);
     border-color: var(--color);
@@ -190,12 +170,10 @@
         inset 0 0 30px rgba(255, 255, 255, 0.05);
     transform: rotate(var(--angle)) translateX(220px) rotate(calc(-1 * var(--angle))) scale(1.12);
 }
-
 .orbit-item.active::after {
     opacity: 0.6;
     animation: glowPulse 2s ease-in-out infinite;
 }
-
 .orbit-item-inner {
     display: flex;
     flex-direction: column;
@@ -207,25 +185,21 @@
     position: relative;
     z-index: 2;
 }
-
 .orbit-icon {
     color: rgba(255, 255, 255, 0.6);
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
-
 .orbit-item:hover .orbit-icon {
     color: var(--color);
     transform: scale(1.1) rotate(-5deg);
     filter: drop-shadow(0 0 12px var(--color));
 }
-
 .orbit-item.active .orbit-icon {
     color: var(--color);
     transform: scale(1.15);
     filter: drop-shadow(0 0 16px var(--color));
 }
-
 .orbit-label {
     font-size: 11px;
     font-weight: 700;
@@ -235,16 +209,13 @@
     color: rgba(255, 255, 255, 0.7);
     transition: all 0.4s ease;
 }
-
 .orbit-item:hover .orbit-label {
     color: var(--text-primary);
 }
-
 .orbit-item.active .orbit-label {
     color: #fff;
     text-shadow: 0 0 10px var(--color);
 }
-
 .orbit-position-indicator {
     position: absolute;
     top: -8px;
@@ -258,11 +229,9 @@
     transition: opacity 0.3s ease;
     box-shadow: 0 0 10px var(--color);
 }
-
 .orbit-item.active .orbit-position-indicator {
     opacity: 1;
 }
-
 .orbit-pulse {
     position: absolute;
     top: 50%;

@@ -2,7 +2,6 @@
     width: 100%;
     perspective: 1000px;
 }
-
 .skill-card-3d {
     position: relative;
     background: rgba(15, 17, 23, 0.95);
@@ -16,7 +15,6 @@
     transform: translateY(20px) scale(0.98);
     animation: cardReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-
 .card-spotlight {
     position: absolute;
     top: 0;
@@ -27,14 +25,12 @@
     z-index: 1;
     opacity: 0.6;
 }
-
 @keyframes cardReveal {
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
 }
-
 .skill-card-3d::before {
     content: '';
     position: absolute;
@@ -45,7 +41,6 @@
     background: var(--gradient, linear-gradient(90deg, #8f7aff, #6366f1));
     box-shadow: 0 0 20px var(--color, #8f7aff);
 }
-
 .skill-card-3d:hover {
     border-color: rgba(255, 255, 255, 0.15);
     box-shadow:
@@ -53,7 +48,6 @@
         0 0 50px -10px rgba(var(--color-rgb, 143, 122, 255), 0.2),
         0 0 0 1px rgba(255, 255, 255, 0.08) inset;
 }
-
 .skill-card-header {
     display: flex;
     align-items: center;
@@ -64,7 +58,6 @@
     position: relative;
     z-index: 2;
 }
-
 .skill-header-icon {
     width: 64px;
     height: 64px;
@@ -78,17 +71,14 @@
     transition: all 0.3s ease;
     position: relative;
 }
-
 .skill-header-icon svg {
     width: 30px;
     height: 30px;
     color: var(--color, #8f7aff);
 }
-
 .skill-title-block {
     flex: 1;
 }
-
 .skill-card-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 32px;
@@ -97,7 +87,6 @@
     color: #fff;
     letter-spacing: -1px;
 }
-
 .skill-card-subtitle, .skill-card-subtitle-progression {
     font-size: 14px;
     color: var(--color, #8f7aff);
@@ -106,7 +95,6 @@
     letter-spacing: 2px;
     margin-top: 4px;
 }
-
 .skill-card-description {
     font-size: 15px;
     line-height: 1.7;
@@ -115,7 +103,6 @@
     position: relative;
     z-index: 2;
 }
-
 .skills-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -124,12 +111,10 @@
     position: relative;
     z-index: 2;
 }
-
 .skills-grid-container > * {
     opacity: 0;
     animation: fadeSlideUp 0.5s ease forwards;
 }
-
 .skills-grid-container > *:nth-child(1) { animation-delay: 0.1s; }
 .skills-grid-container > *:nth-child(2) { animation-delay: 0.15s; }
 .skills-grid-container > *:nth-child(3) { animation-delay: 0.2s; }
@@ -139,7 +124,6 @@
 .skills-grid-container > *:nth-child(7) { animation-delay: 0.4s; }
 .skills-grid-container > *:nth-child(8) { animation-delay: 0.45s; }
 .skills-grid-container > *:nth-child(9) { animation-delay: 0.5s; }
-
 @keyframes fadeSlideUp {
     from {
         opacity: 0;
@@ -150,12 +134,10 @@
         transform: translateY(0);
     }
 }
-
 .skills-column {
     display: flex;
     flex-direction: column;
 }
-
 .section-label {
     display: flex;
     align-items: center;
@@ -167,7 +149,6 @@
     margin-bottom: 12px;
     font-weight: 700;
 }
-
 .section-label svg {
     color: var(--color, #8f7aff);
 }

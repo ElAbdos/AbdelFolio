@@ -7,7 +7,6 @@
     color: var(--text-accent);
     margin-bottom: 16px;
 }
-
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
@@ -16,7 +15,6 @@
     margin: 0 0 24px;
     color: var(--text-primary);
 }
-
 .section-subtitle {
     font-size: 18px;
     color: var(--text-secondary);
@@ -24,12 +22,10 @@
     margin: 0 auto;
     line-height: 1.6;
 }
-
 @media (max-width: 768px) {
     .section-title {
         font-size: 36px;
     }
-
     .section-subtitle {
         font-size: 16px;
     }

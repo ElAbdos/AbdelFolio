@@ -12,7 +12,6 @@
   margin-bottom: 24px;
   animation: fadeInDown 0.8s ease-out;
 }
-
 .pulse-dot {
   width: 8px;
   height: 8px;
@@ -21,7 +20,6 @@
   box-shadow: 0 0 0 rgba(34, 197, 94, 0.4);
   animation: pulse-green 2s infinite;
 }
-
 .hero-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 64px;
@@ -35,7 +33,6 @@
   -webkit-text-fill-color: transparent;
   animation: gradientShift 4s ease infinite;
 }
-
 .text-highlight {
   display: block;
   background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
@@ -43,7 +40,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .hero-subtitle {
   font-size: 20px;
   color: var(--text-secondary);
@@ -53,12 +49,10 @@
   gap: 10px;
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
-
 .subtitle-highlight {
   color: var(--text-accent);
   font-weight: 600;
 }
-
 .cursor {
   display: inline-block;
   width: 3px;

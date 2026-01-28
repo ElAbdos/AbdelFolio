@@ -9,15 +9,12 @@
     --angle: 0deg;
     --delay: 0s;
 }
-
 .skills-section {
     padding: 120px 20px;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
 }
-
-
 .skills-grid-pattern {
     position: absolute;
     top: 0;
@@ -31,7 +28,6 @@
     pointer-events: none;
     z-index: 0;
 }
-
 .skills-container-ultra {
     max-width: 1400px;
     margin: 0 auto;
@@ -42,11 +38,9 @@
     align-items: center;
     gap: 60px;
 }
-
 .skills-header-wrapper {
     text-align: center;
 }
-
 .skills-content-grid {
     display: grid;
     grid-template-columns: 650px 1fr;
@@ -54,7 +48,6 @@
     align-items: start;
     width: 100%;
 }
-
 .skills-nav-column {
     display: flex;
     justify-content: center;

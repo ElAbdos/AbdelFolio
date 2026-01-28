@@ -1,16 +1,13 @@
-
 @media (prefers-reduced-motion: reduce) {
     .timeline-item, .timeline-content-wrapper, .timeline-dot, .timeline-progress-bar, .timeline-tag, .timeline-particle {
         animation: none !important;
         transition: none !important;
     }
-
     .timeline-item {
         opacity: 1;
         transform: none;
     }
 }
-
 .timeline-dot:focus-visible {
     outline: 3px solid var(--timeline-primary);
     outline-offset: 4px;

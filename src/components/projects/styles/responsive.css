@@ -1,266 +1,197 @@
-/* ==========================================================================
-   RESPONSIVE - PROJECTS SECTION
-   ========================================================================== */
 
-/* ==========================================================================
-   GRANDS ÉCRANS / XL DESKTOP (> 1400px)
-   ========================================================================== */
+
 @media (min-width: 1401px) {
     .projects-header {
         margin-bottom: 100px;
     }
-
     .projects-title {
         font-size: 72px;
     }
-
     .project-card-3d {
         width: 500px;
         height: 720px;
     }
-
     .carousel-3d-wrapper {
         height: 800px;
     }
 }
 
-/* ==========================================================================
-   DESKTOP / GRANDE TABLETTE (1025px - 1400px)
-   ========================================================================== */
 @media (max-width: 1400px) {
     .project-card-3d {
         width: 460px;
         height: 680px;
     }
-
     .carousel-3d-wrapper {
         height: 750px;
     }
-
     .project-card-3d.prev {
         transform: translateX(-380px) scale(0.85) rotateY(15deg) translateZ(-40px);
     }
-
     .project-card-3d.next {
         transform: translateX(380px) scale(0.85) rotateY(-15deg) translateZ(-40px);
     }
 }
 
-/* ==========================================================================
-   TABLETTE (768px - 1024px)
-   ========================================================================== */
 @media (max-width: 1024px) {
-    /* Container & Section */
     .projects-section {
         padding: 60px 20px 100px;
     }
-
     .projects-header {
         margin-bottom: 50px;
     }
-
     .projects-badge {
         padding: 8px 16px;
         font-size: 11px;
         margin-bottom: 16px;
     }
-
     .projects-title {
         font-size: 42px;
         letter-spacing: -1.5px;
     }
-
     .projects-subtitle {
         font-size: 16px;
         max-width: 500px;
         margin: 0 auto;
     }
-
-    /* Carousel */
     .carousel-3d-wrapper {
         height: 620px;
         perspective: 1000px;
     }
-
     .project-card-3d {
         width: 360px;
         height: 560px;
         border-radius: 20px;
     }
-
     .project-card-3d.prev {
         transform: translateX(-300px) scale(0.85) rotateY(12deg) translateZ(-40px);
         opacity: 0.5;
     }
-
     .project-card-3d.next {
         transform: translateX(300px) scale(0.85) rotateY(-12deg) translateZ(-40px);
         opacity: 0.5;
     }
-
     .project-card-3d.hidden-left {
         transform: translateX(-600px) scale(0.7) rotateY(20deg);
     }
-
     .project-card-3d.hidden-right {
         transform: translateX(600px) scale(0.7) rotateY(-20deg);
     }
-
-    /* Card Visual */
     .project-visual {
         height: 170px;
     }
-
     .project-logo {
         width: 90px;
         height: 90px;
         padding: 12px;
     }
-
     .project-initials {
         width: 80px;
         height: 80px;
         font-size: 28px;
     }
-
     .project-year {
         top: 16px;
         right: 16px;
         padding: 3px 10px;
         font-size: 10px;
     }
-
-    /* Card Info */
     .project-info {
         padding: 20px;
     }
-
     .project-title {
         font-size: 22px;
         margin-bottom: 8px;
     }
-
     .project-desc {
         font-size: 13px;
         margin-bottom: 16px;
         line-height: 1.5;
     }
-
     .project-section-label {
         font-size: 9px;
         gap: 6px;
         margin-bottom: 8px;
     }
-
-    /* Tags & Badges */
     .project-tags {
         gap: 6px;
         margin-bottom: 14px;
     }
-
     .project-tag {
         font-size: 10px;
         padding: 5px 10px;
     }
-
     .skills-badges {
         gap: 6px;
     }
-
     .skill-category-badge {
         font-size: 10px;
         padding: 5px 12px;
     }
-
-    /* Buttons */
     .project-links {
         padding-top: 16px;
         gap: 10px;
     }
-
     .project-btn {
         height: 44px;
         font-size: 11px;
         padding: 0 12px;
         gap: 8px;
     }
-
     .project-btn svg {
         width: 16px;
         height: 16px;
     }
-
-    /* Controls */
     .carousel-control {
         width: 48px;
         height: 48px;
     }
-
     .carousel-control.prev {
         left: 10px;
     }
-
     .carousel-control.next {
         right: 10px;
     }
-
-    /* Indicators */
     .carousel-indicators {
         display: flex;
         margin-top: 30px;
     }
-
     .indicator-dot {
         width: 8px;
         height: 8px;
     }
-
     .indicator-dot.active {
         width: 24px;
     }
 }
 
-/* ==========================================================================
-   PETITE TABLETTE / GRAND MOBILE (600px - 767px)
-   ========================================================================== */
 @media (max-width: 767px) {
-    /* Container & Section */
     .projects-section {
         padding: 50px 15px 80px;
     }
-
     .projects-header {
         margin-bottom: 40px;
     }
-
     .projects-badge {
         padding: 6px 14px;
         font-size: 10px;
         letter-spacing: 1.5px;
     }
-
     .projects-title {
         font-size: 32px;
         letter-spacing: -1px;
     }
-
     .projects-subtitle {
         font-size: 14px;
         max-width: 400px;
     }
-
-    /* Carousel - Mode simplifié sans perspective 3D */
     .carousel-3d-wrapper {
         height: 580px;
         perspective: none;
     }
-
     .carousel-scene {
         align-items: flex-start;
         padding-top: 10px;
     }
-
-    /* Cards - Slider horizontal simple */
     .project-card-3d {
         position: absolute;
         width: calc(100% - 60px);
@@ -272,67 +203,54 @@
         border-radius: 18px;
         transition: transform 0.4s ease, opacity 0.4s ease;
     }
-
     .project-card-3d.active {
         transform: translateX(0) !important;
         opacity: 1;
         z-index: 20;
     }
-
     .project-card-3d.prev {
         transform: translateX(-110%) !important;
         opacity: 0;
         z-index: 10;
         pointer-events: none;
     }
-
     .project-card-3d.next {
         transform: translateX(110%) !important;
         opacity: 0;
         z-index: 10;
         pointer-events: none;
     }
-
     .project-card-3d.hidden-left,
     .project-card-3d.hidden-right {
         transform: scale(0.9);
         opacity: 0;
     }
-
-    /* Card Visual */
     .project-visual {
         height: 150px;
     }
-
     .project-logo {
         width: 80px;
         height: 80px;
         padding: 10px;
     }
-
     .project-initials {
         width: 70px;
         height: 70px;
         font-size: 24px;
     }
-
     .project-year {
         top: 12px;
         right: 12px;
         padding: 2px 8px;
         font-size: 9px;
     }
-
-    /* Card Info */
     .project-info {
         padding: 18px;
     }
-
     .project-title {
         font-size: 20px;
         margin-bottom: 6px;
     }
-
     .project-desc {
         font-size: 13px;
         margin-bottom: 14px;
@@ -342,50 +260,39 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-
     .project-section {
         margin-bottom: 12px;
     }
-
     .project-section-label {
         font-size: 9px;
         gap: 5px;
         margin-bottom: 8px;
     }
-
     .project-section-label svg {
         width: 12px;
         height: 12px;
     }
-
-    /* Tags & Badges */
     .project-tags {
         gap: 5px;
         margin-bottom: 12px;
     }
-
     .project-tag {
         font-size: 10px;
         padding: 4px 8px;
     }
-
     .skills-badges {
         gap: 5px;
     }
-
     .skill-category-badge {
         font-size: 9px;
         padding: 4px 10px;
     }
-
-    /* Buttons */
     .project-links {
         padding-top: 14px;
         gap: 8px;
         opacity: 1;
         transform: none;
     }
-
     .project-btn {
         height: 40px;
         font-size: 10px;
@@ -393,13 +300,10 @@
         gap: 6px;
         border-radius: 10px;
     }
-
     .project-btn svg {
         width: 14px;
         height: 14px;
     }
-
-    /* Controls - Position en bas */
     .carousel-control {
         top: auto;
         bottom: -60px;
@@ -407,73 +311,56 @@
         width: 44px;
         height: 44px;
     }
-
     .carousel-control.prev {
         left: 50%;
         margin-left: -50px;
     }
-
     .carousel-control.next {
         right: auto;
         left: 50%;
         margin-left: 6px;
     }
-
-    /* Indicators */
     .carousel-indicators {
         display: flex;
         margin-top: 20px;
         justify-content: center;
         width: 100%;
     }
-
     .indicator-dot {
         width: 8px;
         height: 8px;
     }
-
     .indicator-dot.active {
         width: 28px;
     }
 }
 
-/* ==========================================================================
-   MOBILE (375px - 599px)
-   ========================================================================== */
 @media (max-width: 599px) {
-    /* Container & Section */
     .projects-section {
         padding: 40px 12px 70px;
     }
-
     .projects-header {
         margin-bottom: 30px;
     }
-
     .projects-badge {
         padding: 5px 12px;
         font-size: 9px;
         letter-spacing: 1px;
     }
-
     .projects-title {
         font-size: 26px;
         letter-spacing: -0.5px;
     }
-
     .projects-subtitle {
         font-size: 13px;
         line-height: 1.6;
         max-width: 100%;
         padding: 0 10px;
     }
-
-    /* Carousel */
     .carousel-3d-wrapper {
         height: 540px;
         min-height: 540px;
     }
-
     .project-card-3d {
         width: calc(100% - 40px);
         max-width: 100%;
@@ -481,92 +368,72 @@
         margin-left: calc(-50% + 20px);
         border-radius: 16px;
     }
-
-    /* Card Visual */
     .project-visual {
         height: 130px;
     }
-
     .project-logo {
         width: 70px;
         height: 70px;
         padding: 8px;
     }
-
     .project-initials {
         width: 60px;
         height: 60px;
         font-size: 22px;
     }
-
     .project-year {
         top: 10px;
         right: 10px;
         padding: 2px 6px;
         font-size: 8px;
     }
-
-    /* Card Info */
     .project-info {
         padding: 16px;
     }
-
     .project-title {
         font-size: 18px;
         margin-bottom: 6px;
     }
-
     .project-desc {
         font-size: 12px;
         margin-bottom: 12px;
         max-height: 54px;
         -webkit-line-clamp: 3;
     }
-
     .project-section {
         margin-bottom: 10px;
     }
-
     .project-section-label {
         font-size: 8px;
         gap: 4px;
         margin-bottom: 6px;
         letter-spacing: 1px;
     }
-
     .project-section-label svg {
         width: 10px;
         height: 10px;
     }
-
-    /* Tags & Badges */
     .project-tags {
         gap: 4px;
         margin-bottom: 10px;
     }
-
     .project-tag {
         font-size: 9px;
         padding: 3px 8px;
         border-radius: 6px;
     }
-
     .skills-badges {
         gap: 4px;
     }
-
     .skill-category-badge {
         font-size: 8px;
         padding: 3px 8px;
         border-radius: 12px;
     }
-
-    /* Buttons */
     .project-links {
         padding-top: 12px;
         gap: 8px;
     }
-
     .project-btn {
         height: 36px;
         font-size: 9px;
@@ -575,209 +442,156 @@
         border-radius: 8px;
         letter-spacing: 0.3px;
     }
-
     .project-btn svg {
         width: 13px;
         height: 13px;
     }
-
-    /* Controls */
     .carousel-control {
         width: 40px;
         height: 40px;
         bottom: -55px;
     }
-
     .carousel-control.prev {
         margin-left: -45px;
     }
-
-    /* Indicators */
     .carousel-indicators {
         margin-top: 16px;
         gap: 8px;
     }
-
     .indicator-dot {
         width: 6px;
         height: 6px;
     }
-
     .indicator-dot.active {
         width: 24px;
     }
-
-    /* Project Section Skills */
     .project-skills-section {
         margin-bottom: 14px;
     }
 }
 
-/* ==========================================================================
-   TRES PETIT MOBILE (< 375px)
-   ========================================================================== */
 @media (max-width: 374px) {
     .projects-section {
         padding: 30px 8px 60px;
     }
-
     .projects-header {
         margin-bottom: 25px;
     }
-
     .projects-badge {
         padding: 4px 10px;
         font-size: 8px;
     }
-
     .projects-title {
         font-size: 22px;
     }
-
     .projects-subtitle {
         font-size: 12px;
         padding: 0 5px;
     }
-
-    /* Carousel */
     .carousel-3d-wrapper {
         height: auto;
         min-height: 500px;
     }
-
     .project-card-3d {
         width: calc(100% - 20px);
         margin-left: calc(-50% + 10px);
         min-height: 460px;
     }
-
-    /* Card Visual */
     .project-visual {
         height: 110px;
     }
-
     .project-logo {
         width: 60px;
         height: 60px;
         padding: 6px;
     }
-
     .project-initials {
         width: 50px;
         height: 50px;
         font-size: 18px;
     }
-
-    /* Card Info */
     .project-info {
         padding: 14px;
     }
-
     .project-title {
         font-size: 16px;
     }
-
     .project-desc {
         font-size: 11px;
         max-height: 48px;
     }
-
-    /* Buttons */
     .project-links {
         padding-top: 10px;
         gap: 6px;
     }
-
     .project-btn {
         height: 34px;
         font-size: 8px;
         padding: 0 6px;
     }
-
     .project-btn svg {
         width: 12px;
         height: 12px;
     }
-
-    /* Controls */
     .carousel-control {
         width: 36px;
         height: 36px;
         bottom: -50px;
     }
-
     .carousel-control.prev {
         margin-left: -40px;
     }
-
     .carousel-control.next {
         margin-left: 4px;
     }
 }
 
-/* ==========================================================================
-   OPTIMISATION TOUCH / SWIPE
-   ========================================================================== */
 @media (hover: none) and (pointer: coarse) {
-    /* Désactiver les effets hover sur appareils tactiles */
     .project-card-3d.active:hover {
         transform: translateX(0) scale(1) translateZ(50px);
     }
-
     .project-card-3d.active:hover .project-logo {
         transform: none;
     }
-
     .project-card-3d.active:hover .project-visual {
         background: radial-gradient(circle at center, rgba(var(--card-color-rgb), 0.1), transparent 70%);
     }
-
     .skill-category-badge:hover {
         transform: none;
         background: transparent;
         color: var(--skill-color);
     }
-
     .skill-category-badge:active {
         background: var(--skill-color);
         color: #000;
     }
-
     .project-tag:hover {
         background: rgba(255, 255, 255, 0.03);
         color: rgba(255, 255, 255, 0.8);
     }
-
     .project-btn:hover {
         transform: none;
     }
-
     .project-btn:active {
         transform: scale(0.97);
     }
-
     .carousel-control:hover:not(:disabled) {
         background: rgba(255, 255, 255, 0.05);
         transform: none;
     }
-
     .carousel-control:active:not(:disabled) {
         background: var(--text-accent);
         transform: scale(0.95);
     }
-
     .indicator-dot:hover {
         transform: none;
     }
-
-    /* Améliorer la zone de touch des boutons */
     .project-btn,
     .skill-category-badge,
     .carousel-control {
         min-height: 44px;
         min-width: 44px;
     }
-
     .skill-category-badge {
         display: inline-flex;
         align-items: center;
@@ -785,78 +599,60 @@
     }
 }
 
-/* ==========================================================================
-   ORIENTATION PAYSAGE SUR MOBILE
-   ========================================================================== */
 @media (max-height: 600px) and (orientation: landscape) {
     .projects-section {
         padding: 30px 20px 50px;
     }
-
     .projects-header {
         margin-bottom: 25px;
     }
-
     .projects-badge {
         margin-bottom: 12px;
         padding: 4px 12px;
         font-size: 9px;
     }
-
     .projects-title {
         font-size: 24px;
         margin-bottom: 8px;
     }
-
     .projects-subtitle {
         font-size: 12px;
     }
-
     .carousel-3d-wrapper {
         height: 350px;
         min-height: 350px;
     }
-
     .project-card-3d {
         min-height: 350px;
     }
-
     .project-visual {
         height: 100px;
     }
-
     .project-info {
         padding: 14px;
     }
-
     .project-title {
         font-size: 16px;
     }
-
     .project-desc {
         font-size: 11px;
         margin-bottom: 8px;
         max-height: 36px;
         -webkit-line-clamp: 2;
     }
-
     .project-section-label {
         margin-bottom: 6px;
     }
-
     .project-tags {
         margin-bottom: 8px;
     }
-
     .project-links {
         padding-top: 10px;
     }
-
     .project-btn {
         height: 32px;
         font-size: 9px;
     }
-
     .carousel-control {
         width: 36px;
         height: 36px;
@@ -864,27 +660,20 @@
     }
 }
 
-/* ==========================================================================
-   IMPRESSION
-   ========================================================================== */
 @media print {
     .projects-section {
         padding: 20px 0;
     }
-
     .projects-header {
         margin-bottom: 20px;
     }
-
     .carousel-control,
     .carousel-indicators {
         display: none;
     }
-
     .carousel-3d-wrapper {
         height: auto;
     }
-
     .project-card-3d {
         position: relative !important;
         transform: none !important;
@@ -894,7 +683,6 @@
         border: 1px solid #ccc;
         page-break-inside: avoid;
     }
-
     .project-card-3d:not(.active) {
         display: none;
     }

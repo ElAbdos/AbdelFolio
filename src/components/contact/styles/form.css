@@ -1,7 +1,6 @@
 .contact-form-col {
     width: 100%;
 }
-
 .contact-form {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
@@ -13,20 +12,17 @@
     gap: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
 .form-label {
     font-size: 13px;
     font-weight: 600;
     color: var(--text-secondary);
     margin-left: 4px;
 }
-
 .form-input, .form-textarea {
     background: var(--element-bg);
     border: 1px solid var(--element-border);
@@ -39,24 +35,20 @@
     width: 100%;
     box-sizing: border-box;
 }
-
 .form-input::placeholder, .form-textarea::placeholder {
     color: var(--text-secondary);
     opacity: 0.5;
 }
-
 .form-input:focus, .form-textarea:focus {
     outline: none;
     border-color: var(--text-accent);
     background: rgba(var(--accent-rgb), 0.05);
     box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.1);
 }
-
 .form-textarea {
     resize: vertical;
     min-height: 120px;
 }
-
 .submit-btn {
     margin-top: 10px;
     background: var(--text-accent);
@@ -74,29 +66,24 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(var(--accent-rgb), 0.3);
 }
-
 .submit-btn:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 8px 30px rgba(var(--accent-rgb), 0.4);
     filter: brightness(1.1);
 }
-
 .submit-btn:disabled {
     opacity: 0.8;
     cursor: wait;
 }
-
 .submit-btn.success {
     background: #6bcb77;
     box-shadow: 0 4px 20px rgba(107, 203, 119, 0.3);
     cursor: default;
 }
-
 .submit-btn.error {
     background: #ff6b6b;
     box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
 }
-
 .loader {
     width: 20px;
     height: 20px;

@@ -9,17 +9,14 @@
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 @media (min-width: 768px) {
   .nav-menu {
     display: flex;
   }
 }
-
 .nav-item {
   position: relative;
 }
-
 .nav-link {
   position: relative;
   display: block;
@@ -31,21 +28,17 @@
   border-radius: 12px;
   transition: all 0.3s ease;
 }
-
 .nav-link:hover {
   color: var(--text-primary);
 }
-
 .nav-link.active {
   color: var(--text-primary);
   font-weight: 600;
 }
-
 .nav-link-text {
   position: relative;
   z-index: 10;
 }
-
 .nav-link-bg {
   position: absolute;
   inset: 0;
@@ -55,19 +48,16 @@
   transform: scale(0.9);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .nav-link:hover .nav-link-bg {
   opacity: 1;
   transform: scale(1);
 }
-
 .nav-link.active .nav-link-bg {
   opacity: 1;
   background: linear-gradient(to bottom, rgba(var(--accent-rgb), 0.2), rgba(var(--accent-rgb), 0.1));
   transform: scale(1);
   box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.1);
 }
-
 .nav-link-underline {
   position: absolute;
   bottom: 6px;
@@ -80,7 +70,6 @@
   transition: width 0.3s ease;
   opacity: 0;
 }
-
 .nav-link.active .nav-link-underline {
   width: 20px;
   opacity: 1;

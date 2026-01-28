@@ -3,7 +3,6 @@
     padding: 40px 20px;
     background: rgba(0, 0, 0, 0.2);
 }
-
 .footer-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -11,25 +10,21 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .copyright {
     color: var(--text-secondary);
     font-size: 14px;
     margin: 0;
 }
-
 .footer-links {
     display: flex;
     gap: 24px;
 }
-
 .footer-link {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.2s ease;
 }
-
 .footer-link:hover {
     color: var(--text-accent);
 }
