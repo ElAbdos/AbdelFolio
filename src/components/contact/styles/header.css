@@ -1,0 +1,46 @@
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(143, 122, 255, 0.1);
+    border: 1px solid rgba(143, 122, 255, 0.2);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-accent);
+    margin-bottom: 24px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.contact-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(42px, 8vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    color: var(--text-primary);
+    letter-spacing: -2px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}

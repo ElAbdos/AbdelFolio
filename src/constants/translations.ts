@@ -204,9 +204,9 @@ export const translations = {
             },
             form: {
                 name: 'Nom',
-                name_ph: 'John Doe',
+                name_ph: 'Exemple Exemple',
                 email: 'Email',
-                email_ph: 'john@example.com',
+                email_ph: 'exemple@example.com',
                 subject: 'Objet',
                 subject_ph: 'Proposition de stage / projet...',
                 message: 'Votre message',
@@ -425,9 +425,9 @@ export const translations = {
             },
             form: {
                 name: 'Name',
-                name_ph: 'Abdel El Haroria',
+                name_ph: 'Exemple Example',
                 email: 'Email',
-                email_ph: 'abdeloffipro@gmail.com',
+                email_ph: 'Exemple@exemple.com',
                 subject: 'Subject',
                 subject_ph: 'Internship proposal / project...',
                 message: 'Your message',
@@ -438,5 +438,4 @@ export const translations = {
             }
         }
     }
-
 };
