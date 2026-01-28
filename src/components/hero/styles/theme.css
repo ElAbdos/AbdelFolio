@@ -1,0 +1,76 @@
+
+[data-theme='light'] .hero-section {
+    background: linear-gradient(180deg, #f5f7fc 0%, #edf0f7 100%);
+}
+[data-theme='light'] .hero-title {
+    background: linear-gradient(135deg, #1a1a2e 0%, #4a4a6a 50%, #8f7aff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+[data-theme='light'] .hero-badge {
+    background: rgba(143, 122, 255, 0.15);
+    border-color: rgba(143, 122, 255, 0.35);
+    color: #8f7aff;
+}
+[data-theme='light'] .hero-bio {
+    color: #4a4a6a;
+}
+[data-theme='light'] .hero-btn.primary {
+    background: linear-gradient(135deg, #8f7aff 0%, #a98fff 100%);
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(143, 122, 255, 0.3);
+}
+[data-theme='light'] .hero-btn.primary:hover {
+    box-shadow: 0 12px 40px rgba(143, 122, 255, 0.4);
+}
+[data-theme='light'] .hero-btn.secondary {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #1a1a2e;
+}
+[data-theme='light'] .hero-btn.secondary:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+[data-theme='light'] .profile-ring {
+    border-color: rgba(143, 122, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(143, 122, 255, 0.1);
+}
+[data-theme='light'] .profile-glow {
+    background: radial-gradient(circle, rgba(143, 122, 255, 0.15) 0%, transparent 70%);
+}
+[data-theme='light'] .stat-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+[data-theme='light'] .stat-card:hover {
+    background: #ffffff;
+    border-color: rgba(143, 122, 255, 0.3);
+    box-shadow: 0 12px 40px rgba(143, 122, 255, 0.15);
+}
+[data-theme='light'] .stat-value {
+    color: #1a1a2e;
+}
+[data-theme='light'] .stat-label {
+    color: #666;
+}
+[data-theme='light'] .stat-icon {
+    color: #8f7aff;
+}
+[data-theme='light'] .scroll-indicator {
+    color: #666;
+}
+[data-theme='light'] .hero-grid {
+    background-image:
+        linear-gradient(rgba(143, 122, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(143, 122, 255, 0.04) 1px, transparent 1px);
+}
+[data-theme='light'] .gradient-orb {
+    background: radial-gradient(circle, rgba(143, 122, 255, 0.15) 0%, transparent 70%);
+}
+[data-theme='light'] .floating-shape {
+    background: rgba(143, 122, 255, 0.08);
+    border-color: rgba(143, 122, 255, 0.15);
+}
