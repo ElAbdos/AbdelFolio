@@ -10,7 +10,6 @@ import { HamburgerButton } from './components/HamburgerButton';
 import { MobileMenu } from './components/MobileMenu';
 import './styles/index.css';
 
-// Composant Navbar principal
 const Navbar: React.FC<NavbarProps> = ({isDark, setIsDark, currentLanguage, setCurrentLanguage,}) => {
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);

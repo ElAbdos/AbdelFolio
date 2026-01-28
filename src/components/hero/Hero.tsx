@@ -25,6 +25,7 @@ const Hero: React.FC<HeroProps> = ({ currentLanguage }) => {
 
   return (
     <section className="hero-section" id="home">
+
       <div className="glow-bg" />
       <div className="hero-container">
         <div className="hero-content">

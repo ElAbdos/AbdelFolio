@@ -26,6 +26,7 @@ export const use3DCardEffect = () => {
 };
 
 
+//Hook pour convertir une couleur hexadécimale en format RGB
 export const hexToRgb = (hex: string): string => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result

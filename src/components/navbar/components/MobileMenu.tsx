@@ -10,8 +10,7 @@ interface MobileMenuProps {
 }
 
 // Composant pour le menu mobile
-export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(
-  ({ menuItems, isOpen, activeSection, onClose, scrollToSection }, ref) => {
+export const MobileMenu = forwardRef<HTMLDivElement, MobileMenuProps>(({ menuItems, isOpen, activeSection, onClose, scrollToSection }, ref) => {
     return (
       <>
         <div className={`mobile-menu ${isOpen ? 'show' : ''}`} ref={ref}>

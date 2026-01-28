@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-// Effet de Typewriter pour une liste de textes
+// Hook pour créer un effet de typewriter
 export const useTypewriter = (texts: string[], typingSpeed = 150, deleteSpeed = 50, pauseDuration = 2000): string => {
   const [textIndex, setTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');

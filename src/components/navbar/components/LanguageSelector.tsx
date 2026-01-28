@@ -10,8 +10,7 @@ interface LanguageSelectorProps {
 }
 
 // Composant pour sélectionner la langue
-export const LanguageSelector = forwardRef<HTMLDivElement, LanguageSelectorProps>(
-  ({ currentLanguage, isOpen, onToggle, onSelect }, ref) => {
+export const LanguageSelector = forwardRef<HTMLDivElement, LanguageSelectorProps>(({ currentLanguage, isOpen, onToggle, onSelect }, ref) => {
     return (
       <div className="language-wrapper" ref={ref}>
         <button onClick={onToggle} className="btn-language clickable">

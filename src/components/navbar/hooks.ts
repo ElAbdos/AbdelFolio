@@ -36,13 +36,8 @@ export const useScrollDetection = (menuItems: MenuItem[]) => {
   return { scrolled, activeSection, setActiveSection };
 };
 
-/**
- * Hook pour fermer les menus lors d'un clic à l'extérieur
- */
-export const useClickOutside = (
-  refs: Array<React.RefObject<any>>,
-  callbacks: (() => void)[]
-) => {
+// Hook pour détecter les clics en dehors de plusieurs références
+export const useClickOutside = (refs: Array<React.RefObject<any>>, callbacks: (() => void)[]) => {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       refs.forEach((ref, index) => {
